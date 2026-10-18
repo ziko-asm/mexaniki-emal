@@ -1,509 +1,486 @@
 <!DOCTYPE html>
-<html lang="az" class="scroll-smooth">
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalların mexaniki emalı | Ф1750 mm-ədək</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0b0f17;
-            color: #f8fafc;
-        }
-        h1, h2, h3, .font-heading {
-            font-family: 'Montserrat', sans-serif;
-        }
-        .metal-bg {
-            background: radial-gradient(circle at 20% 20%, rgba(245, 158, 11, 0.12), transparent 45%),
-                        radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.1), transparent 50%),
-                        linear-gradient(180deg, #0b0f17 0%, #111827 100%);
-        }
-        .industrial-grid {
-            background-size: 36px 36px;
-            background-image: 
-                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        }
-        .card-hover {
-            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 35px -10px rgba(245, 158, 11, 0.22);
-            border-color: rgba(245, 158, 11, 0.55);
-        }
-        @keyframes pulse-ring {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 18px rgba(34, 197, 94, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
-        }
-        .whatsapp-float {
-            animation: pulse-ring 2s infinite;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Detalların mexaniki emalı | Ф1750 mm-ədək karusel torna işləri</title>
+<meta name="description" content="Ф1750 mm-ədək ölçülü iriqabaritli detalların şaquli karusel dəzgahında mexaniki emalı. Flans, halqa, reduktor və nasos gövdələri. 40 illik usta təcrübəsi. Əlaqə: 050 223 45 52.">
+<meta name="theme-color" content="#0e1218">
+<link rel="canonical" href="https://mexaniki-emal.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="az_AZ">
+<meta property="og:url" content="https://mexaniki-emal.vercel.app/">
+<meta property="og:title" content="Ф1750 mm-ədək detalların mexaniki emalı — 40 illik usta təcrübəsi">
+<meta property="og:description" content="Flans, halqa, reduktor və nasos gövdələrinin şaquli karusel dəzgahında emalı. Zəng: 050 223 45 52.">
+<meta property="og:image" content="https://mexaniki-emal.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5a524'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%230e1218' stroke-width='6'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%230e1218'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="thumbs/detal1.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Detalların mexaniki emalı","description":"Ф1750 mm-ədək ölçülü detalların şaquli karusel dəzgahında mexaniki emalı. 40 illik usta təcrübəsi.","telephone":"+994502234552","url":"https://mexaniki-emal.vercel.app/","image":"https://mexaniki-emal.vercel.app/og-image.jpg","areaServed":"AZ"}
+</script>
+<style>
+:root{
+  --bg:#0e1218; --bg-2:#131922; --surface:#171e29; --surface-2:#1d2533; --line:#2a3445; --line-2:#36425a;
+  --ink:#f3f5f8; --ink-2:#c3cbd8; --muted:#8a96a8;
+  --amber:#f5a524; --amber-2:#ffbe4d; --amber-ink:#1a1204;
+  --green:#1fa855; --green-2:#25c062;
+  --radius:16px; --radius-s:10px;
+  --head:"Montserrat",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px; --bar:0px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background-color:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;padding-bottom:var(--bar)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--amber-2);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--head);margin:0;letter-spacing:-.01em;line-height:1.15}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ico{width:20px;height:20px;flex:none;fill:currentColor}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 16px/1 var(--body);padding:15px 22px;border-radius:12px;border:0;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-amber{background:var(--amber);color:var(--amber-ink);box-shadow:0 8px 24px -10px rgba(245,165,36,.7)}
+.btn-amber:hover{background:var(--amber-2)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 8px 24px -10px rgba(31,168,85,.7)}
+.btn-green:hover{background:var(--green-2)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber-2)}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(14,18,24,.86);backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(145deg,var(--amber-2),var(--amber));display:grid;place-items:center;flex:none;box-shadow:0 6px 18px -6px rgba(245,165,36,.6)}
+.mark svg{width:26px;height:26px}
+.brand-t{min-width:0}
+.brand-t b{display:block;font:800 18px/1.15 var(--head);white-space:nowrap}
+.brand-t small{display:block;font:600 11px/1.3 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--amber-2);white-space:nowrap}
+.nav{display:flex;gap:26px;margin-left:auto;font-weight:600;font-size:15px;color:var(--ink-2)}
+.nav a:hover{color:var(--amber-2)}
+.top-cta{display:flex;gap:10px;align-items:center}
+.top-phone{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:12px;border:1px solid rgba(245,165,36,.55);background:var(--bg-2);transition:border-color .2s}
+.top-phone:hover{border-color:var(--amber)}
+.top-phone .pi{width:34px;height:34px;border-radius:9px;background:var(--amber);color:var(--amber-ink);display:grid;place-items:center}
+.top-phone .pi .ico{width:18px;height:18px}
+.top-phone span{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.1}
+.top-phone strong{display:block;font:800 17px/1.2 var(--head);color:var(--amber-2);letter-spacing:.02em}
+.icon-btn{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;flex:none}
+.icon-btn .ico{width:22px;height:22px}
+.top .wa{display:inline-flex;align-items:center;gap:8px;padding:0 16px;height:52px;border-radius:12px;background:var(--green);color:#fff;font-weight:700}
+.top .wa:hover{background:var(--green-2)}
+.m-only{display:none}
+@media (max-width:1040px){.nav{display:none}.top-cta{margin-left:auto}}
+@media (max-width:720px){
+  .top .wrap{height:64px;gap:10px}
+  .top-phone,.top .wa{display:none}
+  .m-only{display:grid}
+  .mark{width:40px;height:40px}
+  .brand-t b{font-size:15.5px}
+  .brand-t small{font-size:10px}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:radial-gradient(900px 500px at 10% -10%,rgba(245,165,36,.14),transparent 60%),
+             radial-gradient(700px 500px at 100% 100%,rgba(60,110,200,.10),transparent 60%),
+             linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(to right,rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:40px 40px;mask-image:linear-gradient(180deg,#000 30%,transparent 95%);-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 95%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:80px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(245,165,36,.12);border:1px solid rgba(245,165,36,.35);color:var(--amber-2);font-size:13px;font-weight:600}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--amber)}
+.hero h1{font-size:clamp(34px,5.2vw,60px);font-weight:900;margin:22px 0 18px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-2);max-width:56ch;margin:0 0 30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.cta-row .btn{font-size:17px;padding:17px 26px}
+.cta-note{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px;max-width:600px}
+.stat{background:rgba(23,30,41,.75);border:1px solid var(--line);border-radius:var(--radius-s);padding:16px}
+.stat b{display:block;font:900 clamp(22px,2.6vw,30px)/1.1 var(--head);color:var(--amber)}
+.stat span{display:block;margin-top:6px;font-size:13px;color:var(--muted);line-height:1.35}
+.hero-fig{position:relative;margin:0;border-radius:22px;overflow:hidden;border:1px solid var(--line-2);box-shadow:0 30px 60px -25px rgba(0,0,0,.8);aspect-ratio:4/5;background:var(--surface);cursor:zoom-in}
+.hero-fig img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.hero-fig:hover img{transform:scale(1.03)}
+.hero-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:56px 22px 20px;background:linear-gradient(0deg,rgba(10,13,18,.95),rgba(10,13,18,0))}
+.tag{display:inline-block;background:var(--amber);color:var(--amber-ink);font:800 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:6px}
+.hero-fig figcaption strong{display:block;margin-top:10px;font:700 18px/1.3 var(--head)}
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:40px;padding-bottom:52px}
+  .hero-fig{aspect-ratio:4/3;max-height:520px}
+}
+@media (max-width:560px){
+  .cta-row .btn{flex:1 1 100%}
+  .stats{gap:8px;margin-top:30px}
+  .stat{padding:12px 10px}
+  .stat span{font-size:12px}
+  .hero-fig{aspect-ratio:4/5}
+}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.s-head{max-width:720px;margin:0 auto 44px;text-align:center}
+.kicker{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.s-head h2{font-size:clamp(26px,3.6vw,40px);font-weight:900;margin:12px 0 12px}
+.s-head p{margin:0;color:var(--ink-2)}
+@media (max-width:560px){section{padding:60px 0}.s-head{margin-bottom:30px}}
+
+/* ---------- works grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:960px){.grid{grid-template-columns:repeat(2,1fr);gap:16px}.grid .card:last-child{grid-column:1/-1}.grid .card:last-child .card-img{aspect-ratio:16/9}}
+@media (max-width:560px){.grid{grid-template-columns:1fr;gap:18px}.card-img,.grid .card:last-child .card-img{aspect-ratio:4/3}}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(245,165,36,.5);box-shadow:0 22px 40px -22px rgba(245,165,36,.35)}
+.card-img{position:relative;display:block;width:100%;padding:0;border:0;background:var(--bg-2);aspect-ratio:4/5;overflow:hidden;cursor:zoom-in}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-img .tag{position:absolute;top:12px;left:12px}
+.card-img .zoom{position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:10px;background:rgba(10,13,18,.75);border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;color:#fff}
+.card-img .zoom .ico{width:18px;height:18px}
+.card-body{padding:18px 18px 8px;flex:1}
+.card-body h3{font-size:17px;font-weight:800;line-height:1.3}
+.card-body p{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.card-foot{display:flex;gap:8px;padding:14px 18px 18px}
+.card-foot .btn{flex:1;font-size:14px;padding:12px 10px;border-radius:10px;box-shadow:none}
+.card-foot .ico{width:18px;height:18px}
+
+/* ---------- features ---------- */
+.band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:960px){.feats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.feats{grid-template-columns:1fr}}
+.feat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.feat .fi{width:48px;height:48px;border-radius:12px;background:rgba(245,165,36,.13);color:var(--amber);display:grid;place-items:center;margin-bottom:16px}
+.feat .fi .ico{width:24px;height:24px}
+.feat h3{font-size:18px;font-weight:800}
+.feat p{margin:8px 0 0;font-size:14.5px;color:var(--ink-2)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s;list-style:none;margin:0;padding:0}
+@media (max-width:860px){.steps{grid-template-columns:1fr}}
+.steps li{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px 24px 84px;min-height:110px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:24px;top:24px;width:42px;height:42px;border-radius:50%;background:var(--amber);color:var(--amber-ink);font:900 19px/42px var(--head);text-align:center}
+.steps h3{font-size:17px;font-weight:800}
+.steps p{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}
+
+/* ---------- contact ---------- */
+.contact{padding:0 0 40px}
+.cbox{position:relative;overflow:hidden;text-align:center;border-radius:26px;padding:56px 28px;border:1px solid rgba(245,165,36,.4);
+  background:radial-gradient(600px 300px at 50% 0%,rgba(245,165,36,.18),transparent 70%),linear-gradient(180deg,var(--surface),var(--bg-2))}
+.cbox h2{font-size:clamp(26px,3.8vw,42px);font-weight:900;margin:14px auto 12px;max-width:20ch}
+.cbox p{color:var(--ink-2);margin:0 auto 30px;max-width:52ch}
+.big-phone{display:inline-block;font:900 clamp(30px,6vw,52px)/1 var(--head);color:var(--amber);letter-spacing:.02em;margin-bottom:28px}
+.big-phone:hover{color:var(--amber-2)}
+.cbox .cta-row{justify-content:center}
+@media (max-width:560px){.cbox{padding:40px 18px;border-radius:20px}}
+footer{padding:28px 0 36px;text-align:center;color:var(--muted);font-size:13.5px}
+footer a{color:var(--ink-2)}
+
+/* ---------- floating WA (desktop) + bottom bar (mobile) ---------- */
+.float-wa{position:fixed;right:22px;bottom:22px;z-index:45;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;border-radius:999px;background:var(--green);color:#fff;font-weight:700;box-shadow:0 14px 30px -10px rgba(31,168,85,.8);transition:background .2s,transform .2s}
+.float-wa:hover{background:var(--green-2);transform:translateY(-2px)}
+.float-wa .ico{width:26px;height:26px}
+.float-wa small{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;font-weight:600}
+.float-wa b{display:block;font-size:15px;line-height:1.15}
+.mbar{display:none}
+@media (max-width:720px){
+  :root{--bar:calc(74px + env(safe-area-inset-bottom))}
+  .float-wa{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:45;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(14,18,24,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:16px 10px;font-size:16px;box-shadow:none}
+}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed;inset:0;z-index:60;display:none;background:rgba(5,7,10,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lb.open{display:flex;flex-direction:column}
+.lb-top{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.lb-top .count{font:600 14px var(--body);color:var(--muted)}
+.lb-close{margin-left:auto;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb-close:hover{background:rgba(255,255,255,.14)}
+.lb-main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 380px;min-height:0}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;padding:16px 64px;min-height:0}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;user-select:none;-webkit-user-drag:none}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(14,18,24,.75);color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb-nav:hover{background:var(--amber);color:var(--amber-ink);border-color:var(--amber)}
+.lb-prev{left:10px}.lb-next{right:10px}
+.lb-info{background:var(--surface);border-left:1px solid var(--line);padding:28px 26px;display:flex;flex-direction:column;gap:16px;overflow-y:auto}
+.lb-info h3{font-size:22px;font-weight:800}
+.lb-info p{margin:0;color:var(--ink-2);font-size:15px}
+.lb-spec{border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+.lb-spec div{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.lb-spec div:last-child{border-bottom:0}
+.lb-spec span{color:var(--muted)} .lb-spec b{color:var(--ink);font-weight:700;text-align:right}
+.lb-cta{margin-top:auto;display:grid;gap:10px}
+.lb-cta .btn{width:100%}
+@media (max-width:900px){
+  .lb.open{overflow-y:auto}
+  .lb-main{grid-template-columns:1fr;flex:none}
+  .lb-stage{height:56vh;padding:10px 10px}
+  .lb-nav{top:auto;bottom:18px;transform:none}
+  .lb-prev{left:18px}.lb-next{right:18px}
+  .lb-info{border-left:0;border-top:1px solid var(--line);padding:22px 18px calc(22px + env(safe-area-inset-bottom))}
+  .lb-cta{grid-template-columns:1fr 1fr}
+}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+</style>
 </head>
-<body class="metal-bg industrial-grid min-h-screen selection:bg-amber-500 selection:text-slate-950">
+<body class="no-js">
 
-    <!-- ÜST MƏLUMAT ZOLAĞI -->
-    <div class="bg-amber-500 text-slate-950 font-bold text-xs sm:text-sm py-2 px-4 border-b border-amber-600">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-award text-base"></i>
-                <span>40 İLLİK PEŞƏKAR USTA TƏCRÜBƏSİ — YÜKSƏK DƏQİQLİKLİ MEXANİKİ EMAL</span>
-            </div>
-            <div class="flex items-center gap-4">
-                <a href="tel:+994502234552" class="hover:underline flex items-center gap-1.5 font-extrabold">
-                    <i class="fa-solid fa-phone-volume"></i> Əlaqə: 050 223 45 52
-                </a>
-            </div>
-        </div>
-    </div>
+<!-- SVG icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 1 1 6.96 3.86zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.7 2.7 0 0 0-.85 2.02c0 1.19.87 2.34.99 2.5.12.17 1.7 2.6 4.13 3.65 1.53.66 2.13.72 2.9.6.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.23-.17-.47-.29z"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><path d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.38A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm1 2v3h3v2h-3v3H9v-3H6V9h3V6z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6l5.6-5.6L5 6.4z"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M8.6 18.6 10 20l8-8-8-8-1.4 1.4 6.6 6.6z"/></symbol>
+  <symbol id="i-diam" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm5.3 1.3 1.4 1.4-12 12-1.4-1.4z"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M12 3a10 10 0 0 1 8.66 15H3.34A10 10 0 0 1 12 3zm0 2a8 8 0 0 0-7.48 11h14.96A8 8 0 0 0 12 5zm4.2 2.4 1.4 1.4-4.2 4.2a1.6 1.6 0 1 1-1.4-1.4z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 11c4.4 0 8 2 8 4.5V21H4v-2.5C4 16 7.6 14 12 14z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5zM8 13v2h8v-2zm0 4v2h6v-2z"/></symbol>
+</svg>
 
-    <!-- SAYTIN BAŞLIĞI (HEADER) - NÖMRƏ VƏ WHATSAPP İLƏ -->
-    <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 shadow-xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap justify-between items-center gap-4">
-            <!-- Loqo və Sayt Adı -->
-            <a href="#" class="flex items-center gap-3.5 group">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 shadow-lg shadow-amber-500/20 group-hover:rotate-45 transition-transform duration-300">
-                    <i class="fa-solid fa-gears text-2xl"></i>
-                </div>
-                <div>
-                    <span class="text-xs uppercase tracking-widest text-amber-400 font-bold block">40 İllik Peşəkar Xidmət</span>
-                    <h2 class="text-lg sm:text-2xl font-black tracking-tight text-white font-heading">Detalların mexaniki emalı</h2>
-                </div>
-            </a>
-
-            <!-- Menyu -->
-            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
-                <a href="#isler" class="hover:text-amber-400 transition">Görülən İşlər (10)</a>
-                <a href="#ustunlukler" class="hover:text-amber-400 transition">40 İllik Təcrübə</a>
-                <a href="#elaqe" class="hover:text-amber-400 transition">Əlaqə</a>
-            </nav>
-
-            <!-- Başlıqda Görünən Nömrə və WhatsApp -->
-            <div class="flex items-center gap-2.5 sm:gap-3">
-                <a href="tel:+994502234552" class="flex items-center gap-3 bg-slate-900 hover:bg-slate-800 border-2 border-amber-500/80 px-3.5 py-2 rounded-xl transition shadow-md">
-                    <div class="w-9 h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center animate-pulse">
-                        <i class="fa-solid fa-phone text-base"></i>
-                    </div>
-                    <div class="text-left">
-                        <span class="text-[10px] uppercase tracking-wider text-slate-400 block leading-none">Usta ilə birbaşa əlaqə</span>
-                        <span class="text-sm sm:text-lg font-black text-amber-400 tracking-wide">050 223 45 52</span>
-                    </div>
-                </a>
-
-                <a href="https://wa.me/994502234552?text=Salam%20Usta,%20detallar%C4%B1n%20mexaniki%20emal%C4%B1%20il%C9%99%20ba%C4%9Fl%C4%B1%20maraqlan%C4%B1ram." target="_blank" class="bg-green-600 hover:bg-green-500 text-white p-3 sm:px-4 sm:py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-green-600/25 transition">
-                    <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span class="hidden sm:inline text-sm">WhatsApp</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- ƏSAS VİTRİN (HERO SECTION) -->
-    <section class="relative overflow-hidden py-12 sm:py-20 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-10 items-center">
-                
-                <!-- Sol Mətn Hissəsi -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-400 text-xs sm:text-sm font-bold">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <span>Ağır Sənaye & Yüksək Dəqiqlikli Karusel Torna İşləri</span>
-                    </div>
-
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight font-heading">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500">Ф1750 mm-ədək</span> ölçülü detalların mexaniki emalı
-                    </h1>
-
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        <strong>40 illik peşəkar usta təcrübəsi</strong> ilə iriqabaritli sənaye detallarının, flansların, reduktor gövdələrinin, klapanların və mürəkkəb metal konstruksiyaların mikron dəqiqliyi ilə yonulması və mexaniki emalı.
-                    </p>
-
-                    <!-- Böyük Əlaqə Qutusu -->
-                    <div class="bg-slate-900/90 border border-slate-700/80 rounded-2xl p-5 sm:p-6 max-w-xl shadow-2xl">
-                        <div class="text-xs uppercase tracking-widest text-amber-400 font-bold mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-headset"></i> Sifariş və məsləhət üçün birbaşa nömrə:
-                        </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                            <a href="tel:+994502234552" class="text-2xl sm:text-3xl font-black text-white hover:text-amber-400 transition flex items-center gap-3">
-                                <i class="fa-solid fa-phone-volume text-amber-500"></i>
-                                050 223 45 52
-                            </a>
-                            <div class="flex gap-2.5">
-                                <a href="tel:+994502234552" class="flex-1 sm:flex-initial bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-5 py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-amber-500/20">
-                                    <i class="fa-solid fa-phone"></i> Zəng Et
-                                </a>
-                                <a href="https://wa.me/994502234552?text=Salam%20Usta,%20detallar%C4%B1n%20mexaniki%20emal%C4%B1%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank" class="flex-1 sm:flex-initial bg-green-600 hover:bg-green-500 text-white font-extrabold px-5 py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-green-600/25">
-                                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Statistik Göstəricilər -->
-                    <div class="grid grid-cols-3 gap-3 sm:gap-5 pt-2">
-                        <div class="bg-slate-900/70 border border-slate-800 p-3.5 rounded-xl">
-                            <div class="text-2xl sm:text-3xl font-black text-amber-400 font-heading">40 İl</div>
-                            <div class="text-xs text-slate-400 font-medium mt-0.5">Fasiləsiz İş Təcrübəsi</div>
-                        </div>
-                        <div class="bg-slate-900/70 border border-slate-800 p-3.5 rounded-xl">
-                            <div class="text-2xl sm:text-3xl font-black text-amber-400 font-heading">Ф1750 mm</div>
-                            <div class="text-xs text-slate-400 font-medium mt-0.5">Maksimal Emal Diametri</div>
-                        </div>
-                        <div class="bg-slate-900/70 border border-slate-800 p-3.5 rounded-xl">
-                            <div class="text-2xl sm:text-3xl font-black text-amber-400 font-heading">100%</div>
-                            <div class="text-xs text-slate-400 font-medium mt-0.5">İndikatorla Dəqiqlik</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sağ Əsas Şəkil Vitrini -->
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-2xl bg-slate-900 group">
-                        <img src="detal1.jpeg" alt="Ф1750 mm-ədək ölçülü detalların mexaniki emalı" class="w-full h-[380px] sm:h-[460px] object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
-                        <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6">
-                            <span class="inline-block bg-amber-500 text-slate-950 text-xs font-black px-3 py-1 rounded-md mb-2 uppercase">Аğır Karusel Torna Dəzgahı</span>
-                            <h3 class="text-lg sm:text-xl font-bold text-white">İriqabaritli detalların yüksək dəqiqliklə emalı</h3>
-                            <p class="text-amber-400 font-extrabold text-sm mt-1 flex items-center gap-2">
-                                <i class="fa-solid fa-phone"></i> Əlaqə: 050 223 45 52
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- GÖRÜLƏN İŞLƏR KİTABXANASI (10 DETAL KARTI) -->
-    <section id="isler" class="py-16 sm:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-amber-400 font-bold text-xs sm:text-sm uppercase tracking-widest">Real İstehsalat Şəkilləri</span>
-                <h2 class="text-2xl sm:text-4xl font-black text-white mt-2 font-heading">
-                    Ф1750 mm-ədək Emal Olunan Detallarımız
-                </h2>
-                <p class="text-slate-400 mt-3 text-sm sm:text-base">
-                    Hər bir detalın üzərinə klikləyərək böyük formada baxa və birbaşa <strong>050 223 45 52</strong> nömrəsi ilə əlaqə saxlaya bilərsiniz.
-                </p>
-            </div>
-
-            <!-- 10 Kartın Yerləşdiyi Şəbəkə -->
-            <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-                <!-- Kartlar JavaScript vasitəsilə avtomatik doldurulur -->
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 40 İLLİK TƏCRÜBƏ VƏ ÜSTÜNLÜKLƏR -->
-    <section id="ustunlukler" class="py-16 bg-slate-900/70 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-slate-950/80 border border-slate-800 p-7 rounded-2xl">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Ф1750 mm Böyük Diametr</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Standart dəzgahlara yerləşməyən iriqabaritli flanslar, halqalar, barabanlar və gövdə detalları xüsusi şaquli karusel dəzgahında emal edilir.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950/80 border border-slate-800 p-7 rounded-2xl">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-gauge-high"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Mikron Dəqiqliyi İlə Yoxlama</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Hər bir detal dəzgah üzərində saat tipli indikatorla mərkəzləşdirilir və çertyoj tələblərinə tam uyğun şəkildə təhvil verilir.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950/80 border border-slate-800 p-7 rounded-2xl">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
-                        <i class="fa-solid fa-user-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">40 İlin Peşəkar Ustası</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        40 illik sənaye təcrübəsi sayəsində ən mürəkkəb və məsuliyyətli sifarişlər yüksək keyfiyyət və etibarla yerinə yetirilir.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AŞAĞI ƏLAQƏ BÖLMƏSİ (FOOTER) -->
-    <footer id="elaqe" class="bg-slate-950 pt-16 pb-12 border-t border-slate-800">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-gradient-to-br from-slate-900 to-slate-950 border-2 border-amber-500/50 rounded-3xl p-8 sm:p-12 shadow-2xl">
-                <span class="bg-amber-500 text-slate-950 text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider">Birbaşa Sifariş Xətti</span>
-                <h2 class="text-2xl sm:text-4xl font-black text-white mt-4 font-heading">
-                    Ф1750 mm-ədək ölçülü detalların mexaniki emalı
-                </h2>
-                <p class="text-slate-300 mt-3 max-w-xl mx-auto text-sm sm:text-base">
-                    Detalların ölçülərini və ya şəklini WhatsApp vasitəsilə göndərə və ya birbaşa zəng edərək usta ilə danışa bilərsiniz.
-                </p>
-
-                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="tel:+994502234552" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xl px-8 py-4 rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-amber-500/25 transition">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        050 223 45 52
-                    </a>
-                    <a href="https://wa.me/994502234552?text=Salam%20Usta,%20detallar%C4%B1n%20mexaniki%20emal%C4%B1%20il%C9%99%20ba%C4%9Fl%C4%B1%20yaz%C4%B1ram." target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-black text-xl px-8 py-4 rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-green-600/30 transition">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        WhatsApp-a Yazın
-                    </a>
-                </div>
-            </div>
-
-            <p class="text-slate-500 text-xs mt-10">
-                © 2026 Detalların mexaniki emalı — 40 İllik Usta Təcrübəsi. Əlaqə: 050 223 45 52
-            </p>
-        </div>
-    </footer>
-
-    <!-- SAĞ AŞAĞI KÜNCDƏ ÜZƏN WHATSAPP DÜYMƏSİ -->
-    <a href="https://wa.me/994502234552?text=Salam%20Usta,%20saytdan%20yaz%C4%B1ram.%20Detallar%C4%B1n%20mexaniki%20emal%C4%B1%20il%C9%99%20ba%C4%9Fl%C4%B1%20sual%C4%B1m%20var." 
-       target="_blank" 
-       aria-label="WhatsApp ilə əlaqə"
-       class="fixed bottom-5 right-5 z-50 flex items-center gap-3 bg-green-600 hover:bg-green-500 text-white px-4 py-3.5 rounded-full shadow-2xl whatsapp-float transition group">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <div class="pr-1 text-left">
-            <span class="block text-[10px] uppercase tracking-wider font-semibold text-green-100 leading-none">WhatsApp Əlaqə</span>
-            <span class="block text-sm font-black tracking-wide">050 223 45 52</span>
-        </div>
+<header class="top">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Detalların mexaniki emalı — əsas səhifə">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6.5" fill="none" stroke="#1a1204" stroke-width="2.6"/><circle cx="12" cy="12" r="1.8" fill="#1a1204"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3" stroke="#1a1204" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+      <span class="brand-t"><small>40 illik usta təcrübəsi</small><b>Detalların mexaniki emalı</b></span>
     </a>
-
-    <!-- DETALIN ÜSTÜNƏ BASANDA AÇILAN PƏNCƏRƏ (MODAL) -->
-    <div id="detailModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-slate-900 border-2 border-amber-500/50 rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl my-8 animate-fadeIn">
-            
-            <!-- Modal Başlığı -->
-            <div class="flex justify-between items-center px-6 py-4 bg-slate-950 border-b border-slate-800">
-                <div class="flex items-center gap-2.5">
-                    <span id="modalBadge" class="bg-amber-500 text-slate-950 text-xs font-black px-2.5 py-1 rounded uppercase">DETAL #1</span>
-                    <h3 id="modalTitle" class="text-lg sm:text-xl font-bold text-white">Detalın Adı</h3>
-                </div>
-                <button onclick="closeModal()" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-red-600 text-slate-300 hover:text-white flex items-center justify-center transition">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
-            </div>
-
-            <!-- Modal İçəriyi -->
-            <div class="grid md:grid-cols-12">
-                <!-- Böyük Şəkil -->
-                <div class="md:col-span-7 bg-slate-950 flex items-center justify-center p-3">
-                    <img id="modalImage" src="" alt="Detal şəkli" class="max-h-[460px] w-auto object-contain rounded-lg">
-                </div>
-
-                <!-- Məlumat və Əlaqə Nömrəsi -->
-                <div class="md:col-span-5 p-6 flex flex-col justify-between space-y-6 bg-slate-900">
-                    <div class="space-y-4">
-                        <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
-                            <i class="fa-solid fa-Check-circle"></i> Ф1750 mm-ədək Mexaniki Emal
-                        </div>
-                        <p id="modalDesc" class="text-slate-300 text-sm leading-relaxed"></p>
-
-                        <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-3.5 text-xs text-slate-400 space-y-1.5">
-                            <div class="flex justify-between"><span>Emal dəqiqliyi:</span> <strong class="text-white">Yüksək (İndikatorla)</strong></div>
-                            <div class="flex justify-between"><span>Maksimal ölçü:</span> <strong class="text-amber-400">Ф1750 mm-ədək</strong></div>
-                            <div class="flex justify-between"><span>Usta təcrübəsi:</span> <strong class="text-white">40 İl</strong></div>
-                        </div>
-                    </div>
-
-                    <!-- Modalın İçindəki Böyük Nömrə və Düymələr -->
-                    <div class="bg-amber-500/10 border-2 border-amber-500/60 rounded-2xl p-4 space-y-3">
-                        <div class="text-center">
-                            <span class="text-[11px] uppercase tracking-wider text-amber-300 font-bold block">Sifariş və Ətraflı Məlumat Üçün Əlaqə:</span>
-                            <a href="tel:+994502234552" class="text-2xl font-black text-white hover:text-amber-400 transition block mt-1">
-                                <i class="fa-solid fa-phone-volume text-amber-400 mr-1.5"></i>050 223 45 52
-                            </a>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2.5 pt-1">
-                            <a href="tel:+994502234552" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition">
-                                <i class="fa-solid fa-phone"></i> Zəng Et
-                            </a>
-                            <a id="modalWhatsappBtn" href="#" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-extrabold py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition">
-                                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <nav class="nav" aria-label="Əsas menyu">
+      <a href="#isler">Görülən işlər</a>
+      <a href="#ustunlukler">Üstünlüklər</a>
+      <a href="#sifaris">Sifariş</a>
+      <a href="#elaqe">Əlaqə</a>
+    </nav>
+    <div class="top-cta">
+      <a class="top-phone" href="tel:+994502234552">
+        <span class="pi"><svg class="ico"><use href="#i-phone"/></svg></span>
+        <span><span>Usta ilə birbaşa</span><strong>050 223 45 52</strong></span>
+      </a>
+      <a class="wa" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı məlumat almaq istəyirəm." href="https://wa.me/994502234552" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+      <a class="icon-btn m-only btn-amber" href="tel:+994502234552" aria-label="Zəng et: 050 223 45 52"><svg class="ico"><use href="#i-phone"/></svg></a>
+      <a class="icon-btn m-only btn-green" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı məlumat almaq istəyirəm." href="https://wa.me/994502234552" target="_blank" rel="noopener" aria-label="WhatsApp ilə yaz"><svg class="ico"><use href="#i-wa"/></svg></a>
     </div>
+  </div>
+</header>
 
-    <script>
-        // 10 Şəklin Siyahısı və Texniki Təsviri (detal1.jpeg - detal10.jpeg)
-        const worksData = [
-            {
-                id: 1,
-                image: "detal1.jpeg",
-                title: "Ağır Şaquli Karusel Torna Dəzgahında Emal",
-                category: "Ф1750 mm Karusel Emalı",
-                desc: "İriqabaritli polad detalların ağır şaquli karusel dəzgahında yüksək dəqiqliklə mərkəzləşdirilməsi və mexaniki yonulması."
-            },
-            {
-                id: 2,
-                image: "detal2.jpeg",
-                title: "Böyük Diametrli Polad Halqa və Flans Emalı",
-                category: "Silindrik Yonma",
-                desc: "Yüksək təzyiq və yük altında işləyən böyük diametrli polad halqanın daxili və xarici səthlərinin təmiz mexaniki emalı."
-            },
-            {
-                id: 3,
-                image: "detal3.jpeg",
-                title: "Çoxpilləli Reduktor Gövdəsinin Daxili Emalı",
-                category: "Gövdə və Yataq Emalı",
-                desc: "İri sənaye reduktoru gövdəsinin podşipnik (rulman) yuvalarının və birləşmə müstəvilərinin dəqiq расточка (içyonma) emalı."
-            },
-            {
-                id: 4,
-                image: "detal4.jpeg",
-                title: "Ağır Sənaye Qovşağının Xarici Silindrik Emalı",
-                category: "Ağır Maşınqayırma",
-                desc: "Mürəkkəb konstruksiyalı ağır fırlanan sənaye detalının xarici işçi səthinin yüksək təmizliklə mexaniki emalı."
-            },
-            {
-                id: 5,
-                image: "detal5.jpeg",
-                title: "Karusel Dəzgahında İri Qovşağın Fırlanma Emalı",
-                category: "Ф1750 mm-ədək Emal",
-                desc: "Böyük qabaritli sənaye qovşağının karusel dəzgahının planşaybasında bərkidilərək tam simmetrik yonulması."
-            },
-            {
-                id: 6,
-                image: "detal6.jpeg",
-                title: "Çoxdeşikli Böyük Flans Halqasının Emalı",
-                category: "Flans Emalı",
-                desc: "Böyük diametrli birləşdirici flansın kipləşdirici səthlərinin və daxili oturacaq yerinin dəqiq mexaniki emalı."
-            },
-            {
-                id: 7,
-                image: "detal7.jpeg",
-                title: "Saat Tipli İndikatorla Mikron Dəqiqliyində Yoxlama",
-                category: "Yüksək Dəqiqlik",
-                desc: "Kvadrat formalı iriqabaritli polad plitənin daxili halqasının emalı və indikator saatı ilə sıfır xəta ilə yoxlanılması."
-            },
-            {
-                id: 8,
-                image: "detal8.jpeg",
-                title: "İriqabaritli Sənaye Klapan və Nasos Gövdəsi",
-                category: "Energetika və Neft-Qaz",
-                desc: "Flanslı iri klapan/nasos korpusunun hər iki tərəfdən birləşmə səthlərinin və daxili keçidinin mexaniki emalı."
-            },
-            {
-                id: 9,
-                image: "detal9.jpeg",
-                title: "Hündür Silindrik Gövdə və Baraban Emalı",
-                category: "Silindrik Gövdə",
-                desc: "Böyük hündürlüyə və diametrə malik silindrik metal gövdənin şaquli karusel dəzgahında tam mexaniki emalı."
-            },
-            {
-                id: 10,
-                image: "detal10.jpeg",
-                title: "Hazır Emal Olunmuş Böyük Diametrli Flans",
-                category: "Hazır Təhvil",
-                desc: "Mexaniki emalı tamamlanmış, rənglənmiş və sifarişçiyə təhvil verilməyə tam hazır olan iriqabaritli sənaye detalı."
-            }
-        ];
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="chip"><i></i>Şaquli karusel torna dəzgahında emal</span>
+      <h1><em>Ф1750 mm-ədək</em> ölçülü detalların mexaniki emalı</h1>
+      <p class="lead">Flansların, halqaların, reduktor və nasos gövdələrinin, iriqabaritli sənaye detallarının çertyoj üzrə yüksək dəqiqliklə yonulması. 40 illik usta təcrübəsi.</p>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="tel:+994502234552"><svg class="ico"><use href="#i-phone"/></svg>050 223 45 52</a>
+        <a class="btn btn-green" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı məlumat almaq istəyirəm." href="https://wa.me/994502234552" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp-a yazın</a>
+      </div>
+      <p class="cta-note">Detalın şəklini və ya çertyojunu WhatsApp-a göndərin — usta özü cavab verir.</p>
+      <div class="stats">
+        <div class="stat"><b>40 il</b><span>usta təcrübəsi</span></div>
+        <div class="stat"><b>Ф1750</b><span>mm-ədək emal diametri</span></div>
+        <div class="stat"><b>Çertyoj</b><span>və ya nümunə üzrə iş</span></div>
+      </div>
+    </div>
+    <figure class="hero-fig" data-open="0" tabindex="0" role="button" aria-label="Şəkli böyüt: Böyük diametrli halqanın karusel dəzgahında emalı">
+      <img src="thumbs/detal1.webp" alt="Şaquli karusel dəzgahının planşaybasında emal olunan böyük diametrli polad halqa" width="640" height="853" fetchpriority="high">
+      <figcaption><span class="tag">Karusel emalı</span><strong>Böyük diametrli halqanın emalı</strong></figcaption>
+    </figure>
+  </div>
+</section>
 
-        const cardsGrid = document.getElementById('cardsGrid');
+<section id="isler">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="kicker">Real istehsalat şəkilləri</span>
+      <h2>Görülən işlər</h2>
+      <p>Şəklə toxunun — böyük ölçüdə baxın. Oxşar detalınız varsa, birbaşa həmin iş barədə yazın.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
 
-        function renderCards() {
-            cardsGrid.innerHTML = worksData.map(item => {
-                const wpText = encodeURIComponent(`Salam Usta, saytdakı "${item.title}" (Detal #${item.id}) işi ilə bağlı məlumat almaq istəyirəm.`);
-                return `
-                <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden card-hover flex flex-col justify-between">
-                    <div>
-                        <!-- Şəkil Hissəsi (Üstünə basanda modal açılır) -->
-                        <div onclick="openModal(${item.id})" class="relative h-64 overflow-hidden bg-slate-950 cursor-pointer group">
-                            <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
-                            <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-xs font-black px-2.5 py-1 rounded-md shadow">
-                                ${item.category}
-                            </span>
-                            <div class="absolute bottom-3 right-3 bg-slate-950/80 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-amber-500/40 flex items-center gap-1.5">
-                                <i class="fa-solid fa-magnifying-glass-plus"></i> Böyüt & Bax
-                            </div>
-                        </div>
+<section id="ustunlukler" class="band">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="kicker">Niyə biz</span>
+      <h2>İri detallar üçün etibarlı emal</h2>
+    </div>
+    <div class="feats">
+      <div class="feat rv"><div class="fi"><svg class="ico"><use href="#i-diam"/></svg></div><h3>Ф1750 mm-ədək</h3><p>Adi torna dəzgahına sığmayan flans, halqa, baraban və gövdələr şaquli karusel dəzgahında emal olunur.</p></div>
+      <div class="feat rv"><div class="fi"><svg class="ico"><use href="#i-gauge"/></svg></div><h3>İndikatorla yoxlama</h3><p>Detal dəzgahda saat tipli indikatorla mərkəzləşdirilir və ölçülər çertyoj tələblərinə uyğun yoxlanılır.</p></div>
+      <div class="feat rv"><div class="fi"><svg class="ico"><use href="#i-user"/></svg></div><h3>40 illik təcrübə</h3><p>Mürəkkəb və məsuliyyətli sifarişləri işi yaxşı tanıyan usta özü yerinə yetirir.</p></div>
+      <div class="feat rv"><div class="fi"><svg class="ico"><use href="#i-doc"/></svg></div><h3>Çertyoj və ya nümunə</h3><p>Çertyojunuz yoxdursa, köhnə detal və ya ölçülər əsasında da iş görülə bilər.</p></div>
+    </div>
+  </div>
+</section>
 
-                        <!-- Mətn Hissəsi -->
-                        <div class="p-5">
-                            <h3 onclick="openModal(${item.id})" class="text-lg font-extrabold text-white hover:text-amber-400 cursor-pointer transition leading-snug">
-                                ${item.title}
-                            </h3>
-                            <p class="text-slate-400 text-xs sm:text-sm mt-2 line-clamp-2">
-                                ${item.desc}
-                            </p>
-                        </div>
-                    </div>
+<section id="sifaris">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="kicker">Sadə proses</span>
+      <h2>Sifariş necə verilir</h2>
+    </div>
+    <ol class="steps">
+      <li class="rv"><h3>Şəkil və ölçüləri göndərin</h3><p>Detalın şəklini, ölçülərini və ya çertyojunu WhatsApp-a göndərin, yaxud zəng edin.</p></li>
+      <li class="rv"><h3>Qiymət və müddəti razılaşdırın</h3><p>Usta işi qiymətləndirir, qiyməti və hazır olma vaxtını sizinlə birbaşa razılaşdırır.</p></li>
+      <li class="rv"><h3>Hazır detalı təhvil alın</h3><p>Detal emal olunur, ölçüləri yoxlanılır və sizə təhvil verilir.</p></li>
+    </ol>
+  </div>
+</section>
 
-                    <!-- Qiymətsiz, Birbaşa Əlaqə Nömrəli Alt Hissə -->
-                    <div class="px-5 pb-5 pt-3 border-t border-slate-800/80 bg-slate-950/40 space-y-3">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Əlaqə nömrəsi:</span>
-                            <a href="tel:+994502234552" class="text-base font-black text-amber-400 hover:underline flex items-center gap-1.5">
-                                <i class="fa-solid fa-phone text-xs"></i> 050 223 45 52
-                            </a>
-                        </div>
+<section id="elaqe" class="contact">
+  <div class="wrap">
+    <div class="cbox rv">
+      <span class="tag">Birbaşa sifariş xətti</span>
+      <h2>Detalınızı emal etdirmək istəyirsiniz?</h2>
+      <p>Zəng edin və ya detalın şəklini WhatsApp-a göndərin. Usta ilə vasitəçisiz, birbaşa danışın.</p>
+      <a class="big-phone" href="tel:+994502234552">050 223 45 52</a>
+      <div class="cta-row">
+        <a class="btn btn-amber" href="tel:+994502234552"><svg class="ico"><use href="#i-phone"/></svg>Zəng et</a>
+        <a class="btn btn-green" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı məlumat almaq istəyirəm." href="https://wa.me/994502234552" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp-a yazın</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
-                        <div class="grid grid-cols-2 gap-2">
-                            <a href="tel:+994502234552" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold py-2.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-1.5 transition">
-                                <i class="fa-solid fa-phone"></i> Zəng Et
-                            </a>
-                            <a href="https://wa.me/994502234552?text=${wpText}" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-extrabold py-2.5 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-1.5 transition">
-                                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                `;
-            }).join('');
-        }
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Detalların mexaniki emalı · 40 illik usta təcrübəsi · <a href="tel:+994502234552">050 223 45 52</a></div>
+</footer>
 
-        // Detalın Üstünə Basanda Açılan Ekran (Modal) Funksiyası
-        function openModal(id) {
-            const item = worksData.find(w => w.id === id);
-            if (!item) return;
+<a class="float-wa" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı sualım var." href="https://wa.me/994502234552" target="_blank" rel="noopener" aria-label="WhatsApp ilə əlaqə: 050 223 45 52">
+  <svg class="ico"><use href="#i-wa"/></svg><span><small>WhatsApp</small><b>050 223 45 52</b></span>
+</a>
+<nav class="mbar" aria-label="Sürətli əlaqə">
+  <a class="btn btn-amber" href="tel:+994502234552"><svg class="ico"><use href="#i-phone"/></svg>Zəng et</a>
+  <a class="btn btn-green" data-wa="Salam, saytdan yazıram. Detalların mexaniki emalı ilə bağlı məlumat almaq istəyirəm." href="https://wa.me/994502234552" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
 
-            document.getElementById('modalBadge').textContent = item.category;
-            document.getElementById('modalTitle').textContent = item.title;
-            document.getElementById('modalImage').src = item.image;
-            document.getElementById('modalDesc').textContent = item.desc;
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+  <div class="lb-top"><span class="tag" id="lbTag"></span><span class="count" id="lbCount"></span>
+    <button class="lb-close" id="lbClose" aria-label="Bağla"><svg class="ico"><use href="#i-x"/></svg></button></div>
+  <div class="lb-main">
+    <div class="lb-stage" id="lbStage">
+      <img id="lbImg" alt="">
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Əvvəlki şəkil"><svg class="ico"><use href="#i-left"/></svg></button>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Növbəti şəkil"><svg class="ico"><use href="#i-right"/></svg></button>
+    </div>
+    <aside class="lb-info">
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <div class="lb-spec">
+        <div><span>Maksimal diametr</span><b>Ф1750 mm-ədək</b></div>
+        <div><span>Dəzgah</span><b>Şaquli karusel torna</b></div>
+        <div><span>Usta təcrübəsi</span><b>40 il</b></div>
+      </div>
+      <div class="lb-cta">
+        <a class="btn btn-amber" href="tel:+994502234552"><svg class="ico"><use href="#i-phone"/></svg>Zəng et</a>
+        <a class="btn btn-green" id="lbWa" href="https://wa.me/994502234552" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Bu iş barədə yaz</a>
+      </div>
+    </aside>
+  </div>
+</div>
 
-            const wpText = encodeURIComponent(`Salam Usta, saytdakı "${item.title}" ilə bağlı məlumat almaq istəyirəm.`);
-            document.getElementById('modalWhatsappBtn').href = `https://wa.me/994502234552?text=${wpText}`;
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+  var PHONE = '994502234552';
+  function wa(text){ return 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text); }
+  document.querySelectorAll('[data-wa]').forEach(function(a){ a.href = wa(a.getAttribute('data-wa')); });
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
-            const modal = document.getElementById('detailModal');
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
+  // Captions describe what each photo shows.
+  var works = [
+    {img:'detal1', tag:'Karusel emalı', title:'Böyük diametrli halqanın karusel dəzgahında emalı', desc:'İriqabaritli polad halqa şaquli karusel dəzgahının planşaybasında mərkəzləşdirilir, daxili və xarici səthləri yonulur.'},
+    {img:'detal2', tag:'Dəzgah', title:'Şaquli karusel torna dəzgahı', desc:'Ф1750 mm-ədək detalların emal olunduğu ağır şaquli karusel dəzgahı. Planşaybada emala hazırlanan polad plitə.'},
+    {img:'detal3', tag:'Nasos gövdəsi', title:'Spiral nasos gövdəsinin flanslarının emalı', desc:'İriqabaritli nasos korpusunun birləşmə flanslarının və oturacaq səthlərinin dəqiq mexaniki emalı.'},
+    {img:'detal4', tag:'Reduktor gövdəsi', title:'Reduktor gövdəsində podşipnik yuvalarının emalı', desc:'Sənaye reduktoru gövdəsinin podşipnik yuvalarının içyonması və birləşmə müstəvilərinin emalı.'},
+    {img:'detal5', tag:'Çarx gövdəsi', title:'Böyük diametrli çarx gövdəsi', desc:'Kranla dəzgaha qaldırılan iriqabaritli çarx (təkər) gövdəsi. Ağır detallar da təhlükəsiz bərkidilərək emal olunur.'},
+    {img:'detal6', tag:'Karusel emalı', title:'Çarx gövdəsinin karusel dəzgahında emalı', desc:'Gövdə planşaybada bərkidilir, xarici diametri və oturacaq səthləri simmetrik şəkildə yonulur.'},
+    {img:'detal7', tag:'Flans emalı', title:'Çoxdeşikli böyük flans halqası', desc:'Bərkidici dəlikləri olan iri flans halqasının daxili və xarici səthlərinin emalı.'},
+    {img:'detal8', tag:'Plitə emalı', title:'Kvadrat polad plitədə dairəvi yuvanın emalı', desc:'İriqabaritli kvadrat plitənin mərkəzi dairəvi yuvası karusel dəzgahında dəqiq yonulur.'},
+    {img:'detal9', tag:'Hazır məhsul', title:'Emalı tamamlanmış konusvari detal', desc:'Emal olunmuş, rənglənmiş və sifarişçiyə təhvil verilməyə hazır iriqabaritli detal.'},
+    {img:'detal10', tag:'Silindrik gövdə', title:'Hündür silindrik gövdənin emalı', desc:'Böyük hündürlüyə və diametrə malik gövdə şaquli karusel dəzgahında emal olunur.'}
+  ];
 
-        function closeModal() {
-            const modal = document.getElementById('detailModal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
+  var grid = document.getElementById('grid');
+  grid.innerHTML = works.map(function(w, i){
+    if (i === 0) return '';
+    return '<article class="card rv">' +
+      '<button class="card-img" data-open="' + i + '" aria-label="Şəkli böyüt: ' + w.title + '">' +
+        '<img src="thumbs/' + w.img + '.webp" alt="' + w.title + '" width="640" height="853" loading="lazy" decoding="async">' +
+        '<span class="tag">' + w.tag + '</span>' +
+        '<span class="zoom" aria-hidden="true"><svg class="ico"><use href="#i-zoom"/></svg></span>' +
+      '</button>' +
+      '<div class="card-body"><h3>' + w.title + '</h3><p>' + w.desc + '</p></div>' +
+      '<div class="card-foot">' +
+        '<a class="btn btn-amber" href="tel:+994502234552"><svg class="ico"><use href="#i-phone"/></svg>Zəng et</a>' +
+        '<a class="btn btn-green" href="' + wa('Salam, saytdakı "' + w.title + '" işinə oxşar detal üçün məlumat almaq istəyirəm.') + '" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>' +
+      '</div></article>';
+  }).join('');
 
-        // Kənara klikləyəndə və ya ESC basanda Modal bağlansın
-        document.getElementById('detailModal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
-        });
+  // Lightbox
+  var lb = document.getElementById('lb'), img = document.getElementById('lbImg'), cur = 0, lastFocus = null;
+  function show(i){
+    cur = (i + works.length) % works.length;
+    var w = works[cur];
+    img.src = w.img + '.jpeg'; img.alt = w.title;
+    document.getElementById('lbTag').textContent = w.tag;
+    document.getElementById('lbCount').textContent = (cur + 1) + ' / ' + works.length;
+    document.getElementById('lbTitle').textContent = w.title;
+    document.getElementById('lbDesc').textContent = w.desc;
+    document.getElementById('lbWa').href = wa('Salam, saytdakı "' + w.title + '" işinə oxşar detal üçün məlumat almaq istəyirəm.');
+    new Image().src = works[(cur + 1) % works.length].img + '.jpeg';
+  }
+  function open(i){ lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; document.getElementById('lbClose').focus(); }
+  function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-open]'); if (t) { e.preventDefault(); open(+t.getAttribute('data-open')); }
+  });
+  document.querySelector('.hero-fig').addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(0); } });
+  document.getElementById('lbClose').onclick = close;
+  document.getElementById('lbPrev').onclick = function(){ show(cur - 1); };
+  document.getElementById('lbNext').onclick = function(){ show(cur + 1); };
+  lb.addEventListener('click', function(e){ if (e.target === lb || e.target.id === 'lbStage') close(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(cur - 1);
+    else if (e.key === 'ArrowRight') show(cur + 1);
+  });
+  var sx = null;
+  img.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, {passive:true});
+  img.addEventListener('touchend', function(e){
+    if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1));
+  });
 
-        renderCards();
-    </script>
+  // Reveal on scroll
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+})();
+</script>
 </body>
 </html>
