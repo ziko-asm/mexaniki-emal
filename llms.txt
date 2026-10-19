@@ -1,0 +1,20 @@
+# Usta Telman Əzizov — detalların mexaniki emalı (Bakı)
+
+> Bakıda iri detalların şaquli karusel torna dəzgahında mexaniki emalı. Diametri 1750 mm-ədək detallar. Usta Telman Əzizov, 40 illik təcrübə. Telefon / WhatsApp: +994 50 223 45 52.
+
+## Əsas məlumat
+- Usta: Telman Əzizov (rusca: Тельман Азизов, ingiliscə: Telman Azizov)
+- Şəhər: Bakı, Azərbaycan
+- Təcrübə: 40 il
+- Dəzgah: şaquli karusel torna dəzgahı (токарно-карусельный станок, vertical turning lathe)
+- Maksimal emal diametri: Ф1750 mm
+- İşlər: flanslar, halqalar, barabanlar, reduktor və nasos gövdələri, çarx gövdələri, plitələr
+- Çertyoj, köhnə detal (nümunə) və ya ölçülər üzrə iş
+- Sifariş: detalın şəklini/çertyojunu WhatsApp-a göndərin, qiymət və müddət usta ilə birbaşa razılaşdırılır
+- Telefon / WhatsApp: +994 50 223 45 52
+- Dəqiq ünvan və iş saatları zəng zamanı bildirilir
+
+## Pages
+- [Azərbaycanca](https://mexaniki-emal.vercel.app/): Ф1750 mm-ədək detalların mexaniki emalı, Bakı
+- [Русский](https://mexaniki-emal.vercel.app/ru/): Токарно-карусельные работы в Баку, обработка деталей до Ø1750 мм — мастер Тельман Азизов
+- [English](https://mexaniki-emal.vercel.app/en/): Large part machining in Baku up to Ø1750 mm on a vertical turning lathe — master Telman Azizov
