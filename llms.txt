@@ -12,7 +12,9 @@
 - Çertyoj, köhnə detal (nümunə) və ya ölçülər üzrə iş
 - Sifariş: detalın şəklini/çertyojunu WhatsApp-a göndərin, qiymət və müddət usta ilə birbaşa razılaşdırılır
 - Telefon / WhatsApp: +994 50 223 45 52
-- Dəqiq ünvan və iş saatları zəng zamanı bildirilir
+- Ünvan: N. Nəsrullayev küçəsi 5, Bakı Elektrik Tökmə Zavodunun ərazisi, Nərimanov rayonu, Bakı
+- E-poçt: texnar.555@mail.ru
+- İş saatları zəng zamanı dəqiqləşdirilir
 
 ## Pages
 - [Azərbaycanca](https://mexaniki-emal.vercel.app/): Ф1750 mm-ədək detalların mexaniki emalı, Bakı
