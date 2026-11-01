@@ -497,24 +497,27 @@ footer a{color:var(--ink-2)}
 .faq details p{margin:0;padding:0 20px 20px;color:var(--ink-2)}
 .contact{padding-top:0}
 
-.models{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.part{margin:0;background:radial-gradient(circle at 50% 42%,#1d2635 0%,#0b0f15 72%);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:none}
-.part canvas:active{cursor:grabbing}
-.part canvas:focus-visible{outline:2px solid var(--amber);outline-offset:-4px}
-.part figcaption{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:12px 16px 14px;border-top:1px solid var(--line)}
-.part figcaption b{font-family:var(--head);font-size:17px}
-.part figcaption span{color:var(--muted);font-size:13.5px;text-align:right}
-.part-tabs{display:none;justify-content:center;gap:8px;margin:0 0 14px}
-.part-tabs button{font:700 15px/1 var(--body);padding:11px 18px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);cursor:pointer}
-.part-tabs button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
-@media (max-width:720px){
-  .models{grid-template-columns:1fr}
-  .part-tabs{display:flex}
-  .part{display:none}.part.on{display:block}
-  .part canvas{aspect-ratio:1/0.92}
-}
-.model-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:18px}
+
+/* pinned horizontal gallery (gallery.js turns it on when the screen is tall enough) */
+.hs-foot{display:none}
+#isler.hs-on{padding:0}
+.hs-on .hs-sticky{position:sticky;top:var(--hs-top);height:var(--hs-h);overflow:hidden;overflow:clip;display:flex;flex-direction:column;justify-content:center}
+.hs-on .wrap{width:100%;min-width:0}
+.hs-on .s-head{margin-bottom:22px}
+.hs-on .grid{display:flex;gap:28px;width:max-content;will-change:transform;align-items:flex-start}
+.hs-on .card{flex:none;width:var(--card-w);will-change:transform,opacity;transition:border-color .3s,box-shadow .3s}
+.hs-on .card:hover{transform:none}
+.hs-on .card.active{border-color:rgba(245,165,36,.55);box-shadow:0 30px 60px -30px rgba(245,165,36,.45)}
+.hs-on .card-img,.hs-on .grid .card:last-child .card-img{aspect-ratio:auto;height:var(--img-h)}
+.hs-on .card-body h3{font-size:16px}
+.hs-on .card-body p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hs-on .hs-foot{display:flex;align-items:center;gap:16px;margin-top:20px}
+.hs-bar{flex:1;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.hs-bar i{display:block;height:100%;background:var(--amber);transform-origin:left;transform:scaleX(0)}
+.hs-count{font:700 14px/1 var(--body);color:var(--muted);white-space:nowrap}
+.hs-count b{font:900 22px/1 var(--head);color:var(--ink);margin-right:4px}
+.hs-hint{font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@media (max-width:560px){.hs-on .s-head p{display:none}.hs-on .s-head{margin-bottom:16px}.hs-on .grid{gap:18px}.hs-hint{display:none}}
 </style>
 </head>
 <body class="no-js">
@@ -581,28 +584,8 @@ footer a{color:var(--ink-2)}
   </div>
 </section>
 
-<section id="model" class="band">
-  <div class="wrap">
-    <div class="s-head rv">
-      <span class="kicker">3D model</span>
-      <h2>Sexdə yonulan detallar</h2>
-      <p>Barmağınızla və ya siçanla istənilən tərəfə fırladın. Səhifəni sürüşdürəndə də fırlanır.</p>
-    </div>
-    <div class="part-tabs" role="group" aria-label="Detal seçin">
-      <button type="button" data-show-part="flange" aria-pressed="true">Flans</button>
-      <button type="button" data-show-part="pulley" aria-pressed="false">Kasnak (şkiv)</button>
-    </div>
-    <div class="models">
-      <figure class="part on" data-part-box="flange"><canvas data-part="flange" tabindex="0" role="img" aria-label="Flans: 12 bolt deşiyi olan qaynaq boğazlı flans"></canvas><figcaption><b>Flans</b><span>Boğazlı flans, çıxıntılı səth, 12 bolt deşiyi</span></figcaption></figure>
-      <figure class="part" data-part-box="pulley"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Kasnak: dörd V-qayış yivi və yüngülləşdirmə deşikləri olan şkiv"></canvas><figcaption><b>Kasnak (şkiv)</b><span>4 V-qayış yivi, iki sıra yüngülləşdirmə deşiyi</span></figcaption></figure>
-    </div>
-    <div class="model-row">
-      <button class="btn btn-ghost" id="parts-reset" type="button">Başlanğıc vəziyyət</button>
-    </div>
-  </div>
-</section>
-
-<section id="isler">
+<section id="isler" class="hs">
+  <div class="hs-sticky">
   <div class="wrap">
     <div class="s-head rv">
       <span class="kicker">Real istehsalat şəkilləri</span>
@@ -610,6 +593,8 @@ footer a{color:var(--ink-2)}
       <p>Şəklə toxunun — böyük ölçüdə baxın. Oxşar detalınız varsa, birbaşa həmin iş barədə yazın.</p>
     </div>
     <div class="grid" id="grid"></div>
+    <div class="hs-foot" aria-hidden="true"><span class="hs-count"><b data-cur>01</b>/ <span data-total>09</span></span><div class="hs-bar"><i></i></div><span class="hs-hint">Aşağı sürüşdürün ↓</span></div>
+  </div>
   </div>
 </section>
 
@@ -870,6 +855,6 @@ footer a{color:var(--ink-2)}
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
 })();
 </script>
-<script src="/parts3d.js" defer></script>
+<script src="/gallery.js" defer></script>
 </body>
 </html>
