@@ -366,12 +366,9 @@ section{padding:88px 0}
 .card-img .tag{position:absolute;top:12px;left:12px}
 .card-img .zoom{position:absolute;right:12px;bottom:12px;width:40px;height:40px;border-radius:10px;background:rgba(10,13,18,.75);border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;color:#fff}
 .card-img .zoom .ico{width:18px;height:18px}
-.card-body{padding:18px 18px 8px;flex:1}
+.card-body{padding:18px;flex:1}
 .card-body h3{font-size:17px;font-weight:800;line-height:1.3}
 .card-body p{margin:8px 0 0;font-size:14px;color:var(--muted)}
-.card-foot{display:flex;gap:8px;padding:14px 18px 18px}
-.card-foot .btn{flex:1;font-size:14px;padding:12px 10px;border-radius:10px;box-shadow:none}
-.card-foot .ico{width:18px;height:18px}
 
 /* ---------- features ---------- */
 .band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -806,10 +803,7 @@ footer a{color:var(--ink-2)}
         '<span class="zoom" aria-hidden="true"><svg class="ico"><use href="#i-zoom"/></svg></span>' +
       '</button>' +
       '<div class="card-body"><h3>' + h(w.title) + '</h3><p>' + h(w.desc) + '</p></div>' +
-      '<div class="card-foot">' +
-        '<a class="btn btn-amber" href="tel:+' + PHONE + '"><svg class="ico"><use href="#i-phone"/></svg>' + h(T.call) + '</a>' +
-        '<a class="btn btn-green" href="' + h(wa(workMsg(w.title))) + '" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>' +
-      '</div></article>';
+    '</article>';
   }).join('');
 
   // Lightbox
