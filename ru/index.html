@@ -499,6 +499,13 @@ footer a{color:var(--ink-2)}
 .faq details[open] summary::after{content:"\2013"}
 .faq details p{margin:0;padding:0 20px 20px;color:var(--ink-2)}
 .contact{padding-top:0}
+
+.model{display:grid;grid-template-columns:1fr;justify-items:center;gap:14px}
+.model canvas{width:min(560px,100%);aspect-ratio:1/1;display:block;cursor:grab;touch-action:pan-y;border-radius:var(--radius);background:radial-gradient(circle at 50% 45%,#1f2938 0%,var(--bg) 70%);border:1px solid var(--line)}
+.model canvas:active{cursor:grabbing}
+.model canvas:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
+.model-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
+.model-hint{color:var(--muted);font-size:14px}
 </style>
 </head>
 <body class="no-js">
@@ -573,6 +580,23 @@ footer a{color:var(--ink-2)}
       <p>Нажмите на фото, чтобы увеличить. Если у вас похожая деталь — напишите прямо об этой работе.</p>
     </div>
     <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="model">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="kicker">3D-модель</span>
+      <h2>Покрутите фланец</h2>
+      <p>Проведите пальцем или мышью. Такие фланцы в цехе обрабатывают диаметром до 1750 мм.</p>
+    </div>
+    <div class="model">
+      <canvas id="flange" tabindex="0" role="img" aria-label="Вращаемая 3D-модель фланца. Можно вращать и клавишами-стрелками."></canvas>
+      <div class="model-row">
+        <button class="btn btn-ghost" id="flange-flip" type="button" aria-pressed="false" data-bottom="Вид снизу" data-top="Вид сверху">Вид снизу</button>
+        <span class="model-hint">Проведите — модель вращается</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -836,5 +860,6 @@ footer a{color:var(--ink-2)}
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
 })();
 </script>
+<script src="/flange.js" defer></script>
 </body>
 </html>
