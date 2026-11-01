@@ -498,16 +498,23 @@ footer a{color:var(--ink-2)}
 .contact{padding-top:0}
 
 .models{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media (max-width:720px){.models{grid-template-columns:1fr}}
 .part{margin:0;background:radial-gradient(circle at 50% 42%,#1d2635 0%,#0b0f15 72%);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:pan-y}
+.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:none}
 .part canvas:active{cursor:grabbing}
 .part canvas:focus-visible{outline:2px solid var(--amber);outline-offset:-4px}
 .part figcaption{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:12px 16px 14px;border-top:1px solid var(--line)}
 .part figcaption b{font-family:var(--head);font-size:17px}
 .part figcaption span{color:var(--muted);font-size:13.5px;text-align:right}
+.part-tabs{display:none;justify-content:center;gap:8px;margin:0 0 14px}
+.part-tabs button{font:700 15px/1 var(--body);padding:11px 18px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);cursor:pointer}
+.part-tabs button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+@media (max-width:720px){
+  .models{grid-template-columns:1fr}
+  .part-tabs{display:flex}
+  .part{display:none}.part.on{display:block}
+  .part canvas{aspect-ratio:1/0.92}
+}
 .model-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:18px}
-.model-hint{color:var(--muted);font-size:14px}
 </style>
 </head>
 <body class="no-js">
@@ -579,15 +586,18 @@ footer a{color:var(--ink-2)}
     <div class="s-head rv">
       <span class="kicker">3D model</span>
       <h2>Sexdə yonulan detallar</h2>
-      <p>Səhifəni aşağı sürüşdürdükcə detallar fırlanır. Barmağınızla da çevirə bilərsiniz.</p>
+      <p>Barmağınızla və ya siçanla istənilən tərəfə fırladın. Səhifəni sürüşdürəndə də fırlanır.</p>
+    </div>
+    <div class="part-tabs" role="group" aria-label="Detal seçin">
+      <button type="button" data-show-part="flange" aria-pressed="true">Flans</button>
+      <button type="button" data-show-part="pulley" aria-pressed="false">Kasnak (şkiv)</button>
     </div>
     <div class="models">
-      <figure class="part"><canvas data-part="flange" tabindex="0" role="img" aria-label="Flans: 8 bolt deşiyi olan qaynaq boğazlı flans"></canvas><figcaption><b>Flans</b><span>Boğazlı flans, 8 bolt deşiyi</span></figcaption></figure>
-      <figure class="part"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Kasnak: üç V-qayış yivi və yüngülləşdirmə deşikləri olan şkiv"></canvas><figcaption><b>Kasnak (şkiv)</b><span>3 V-qayış yivi, 6 yüngülləşdirmə deşiyi</span></figcaption></figure>
+      <figure class="part on" data-part-box="flange"><canvas data-part="flange" tabindex="0" role="img" aria-label="Flans: 12 bolt deşiyi olan qaynaq boğazlı flans"></canvas><figcaption><b>Flans</b><span>Boğazlı flans, çıxıntılı səth, 12 bolt deşiyi</span></figcaption></figure>
+      <figure class="part" data-part-box="pulley"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Kasnak: dörd V-qayış yivi və yüngülləşdirmə deşikləri olan şkiv"></canvas><figcaption><b>Kasnak (şkiv)</b><span>4 V-qayış yivi, iki sıra yüngülləşdirmə deşiyi</span></figcaption></figure>
     </div>
     <div class="model-row">
-      <button class="btn btn-ghost" id="parts-flip" type="button" aria-pressed="false" data-bottom="Altdan bax" data-top="Üstdən bax">Altdan bax</button>
-      <span class="model-hint">Ф1750 mm-ədək ölçüdə emal olunur</span>
+      <button class="btn btn-ghost" id="parts-reset" type="button">Başlanğıc vəziyyət</button>
     </div>
   </div>
 </section>

@@ -498,16 +498,23 @@ footer a{color:var(--ink-2)}
 .contact{padding-top:0}
 
 .models{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media (max-width:720px){.models{grid-template-columns:1fr}}
 .part{margin:0;background:radial-gradient(circle at 50% 42%,#1d2635 0%,#0b0f15 72%);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:pan-y}
+.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:none}
 .part canvas:active{cursor:grabbing}
 .part canvas:focus-visible{outline:2px solid var(--amber);outline-offset:-4px}
 .part figcaption{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:12px 16px 14px;border-top:1px solid var(--line)}
 .part figcaption b{font-family:var(--head);font-size:17px}
 .part figcaption span{color:var(--muted);font-size:13.5px;text-align:right}
+.part-tabs{display:none;justify-content:center;gap:8px;margin:0 0 14px}
+.part-tabs button{font:700 15px/1 var(--body);padding:11px 18px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);cursor:pointer}
+.part-tabs button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+@media (max-width:720px){
+  .models{grid-template-columns:1fr}
+  .part-tabs{display:flex}
+  .part{display:none}.part.on{display:block}
+  .part canvas{aspect-ratio:1/0.92}
+}
 .model-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:18px}
-.model-hint{color:var(--muted);font-size:14px}
 </style>
 </head>
 <body class="no-js">
@@ -579,15 +586,18 @@ footer a{color:var(--ink-2)}
     <div class="s-head rv">
       <span class="kicker">3D models</span>
       <h2>Parts we machine</h2>
-      <p>The parts turn as you scroll down the page. You can also spin them with your finger.</p>
+      <p>Turn them any way you like with your finger or mouse. They also turn as you scroll.</p>
+    </div>
+    <div class="part-tabs" role="group" aria-label="Choose a part">
+      <button type="button" data-show-part="flange" aria-pressed="true">Flange</button>
+      <button type="button" data-show-part="pulley" aria-pressed="false">V-belt pulley</button>
     </div>
     <div class="models">
-      <figure class="part"><canvas data-part="flange" tabindex="0" role="img" aria-label="Flange: weld-neck flange with 8 bolt holes"></canvas><figcaption><b>Flange</b><span>Weld-neck flange, 8 bolt holes</span></figcaption></figure>
-      <figure class="part"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Pulley: V-belt pulley with three grooves and lightening holes"></canvas><figcaption><b>V-belt pulley</b><span>3 V-belt grooves, 6 lightening holes</span></figcaption></figure>
+      <figure class="part on" data-part-box="flange"><canvas data-part="flange" tabindex="0" role="img" aria-label="Flange: weld-neck flange with 12 bolt holes"></canvas><figcaption><b>Flange</b><span>Weld-neck flange, raised face, 12 bolt holes</span></figcaption></figure>
+      <figure class="part" data-part-box="pulley"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Pulley: V-belt pulley with four grooves and lightening holes"></canvas><figcaption><b>V-belt pulley</b><span>4 V-belt grooves, two rings of lightening holes</span></figcaption></figure>
     </div>
     <div class="model-row">
-      <button class="btn btn-ghost" id="parts-flip" type="button" aria-pressed="false" data-bottom="View from below" data-top="View from above">View from below</button>
-      <span class="model-hint">Machined up to Ø1,750 mm</span>
+      <button class="btn btn-ghost" id="parts-reset" type="button">Reset view</button>
     </div>
   </div>
 </section>
