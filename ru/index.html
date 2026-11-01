@@ -497,11 +497,16 @@ footer a{color:var(--ink-2)}
 .faq details p{margin:0;padding:0 20px 20px;color:var(--ink-2)}
 .contact{padding-top:0}
 
-.model{display:grid;grid-template-columns:1fr;justify-items:center;gap:14px}
-.model canvas{width:min(560px,100%);aspect-ratio:1/1;display:block;cursor:grab;touch-action:pan-y;border-radius:var(--radius);background:radial-gradient(circle at 50% 45%,#1f2938 0%,var(--bg) 70%);border:1px solid var(--line)}
-.model canvas:active{cursor:grabbing}
-.model canvas:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
-.model-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
+.models{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:720px){.models{grid-template-columns:1fr}}
+.part{margin:0;background:radial-gradient(circle at 50% 42%,#1d2635 0%,#0b0f15 72%);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.part canvas{width:100%;aspect-ratio:1/1;display:block;cursor:grab;touch-action:pan-y}
+.part canvas:active{cursor:grabbing}
+.part canvas:focus-visible{outline:2px solid var(--amber);outline-offset:-4px}
+.part figcaption{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:12px 16px 14px;border-top:1px solid var(--line)}
+.part figcaption b{font-family:var(--head);font-size:17px}
+.part figcaption span{color:var(--muted);font-size:13.5px;text-align:right}
+.model-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:18px}
 .model-hint{color:var(--muted);font-size:14px}
 </style>
 </head>
@@ -569,6 +574,24 @@ footer a{color:var(--ink-2)}
   </div>
 </section>
 
+<section id="model" class="band">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="kicker">3D-модели</span>
+      <h2>Детали, которые мы точим</h2>
+      <p>Детали вращаются, когда вы прокручиваете страницу. Их можно покрутить и пальцем.</p>
+    </div>
+    <div class="models">
+      <figure class="part"><canvas data-part="flange" tabindex="0" role="img" aria-label="Фланец: воротниковый фланец с 8 отверстиями под болты"></canvas><figcaption><b>Фланец</b><span>Воротниковый фланец, 8 отверстий</span></figcaption></figure>
+      <figure class="part"><canvas data-part="pulley" tabindex="0" role="img" aria-label="Шкив: клиноременный шкив с тремя канавками и облегчающими отверстиями"></canvas><figcaption><b>Шкив</b><span>3 ручья под клиновой ремень, 6 облегчающих отверстий</span></figcaption></figure>
+    </div>
+    <div class="model-row">
+      <button class="btn btn-ghost" id="parts-flip" type="button" aria-pressed="false" data-bottom="Вид снизу" data-top="Вид сверху">Вид снизу</button>
+      <span class="model-hint">Обрабатываем диаметром до 1750 мм</span>
+    </div>
+  </div>
+</section>
+
 <section id="isler">
   <div class="wrap">
     <div class="s-head rv">
@@ -577,23 +600,6 @@ footer a{color:var(--ink-2)}
       <p>Нажмите на фото, чтобы увеличить. Если у вас похожая деталь — напишите прямо об этой работе.</p>
     </div>
     <div class="grid" id="grid"></div>
-  </div>
-</section>
-
-<section id="model">
-  <div class="wrap">
-    <div class="s-head rv">
-      <span class="kicker">3D-модель</span>
-      <h2>Покрутите фланец</h2>
-      <p>Проведите пальцем или мышью. Такие фланцы в цехе обрабатывают диаметром до 1750 мм.</p>
-    </div>
-    <div class="model">
-      <canvas id="flange" tabindex="0" role="img" aria-label="Вращаемая 3D-модель фланца. Можно вращать и клавишами-стрелками."></canvas>
-      <div class="model-row">
-        <button class="btn btn-ghost" id="flange-flip" type="button" aria-pressed="false" data-bottom="Вид снизу" data-top="Вид сверху">Вид снизу</button>
-        <span class="model-hint">Проведите — модель вращается</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -854,6 +860,6 @@ footer a{color:var(--ink-2)}
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
 })();
 </script>
-<script src="/flange.js" defer></script>
+<script src="/parts3d.js" defer></script>
 </body>
 </html>
